@@ -1,3 +1,3 @@
 # ansible_testing
 
-That is my fucking Ansible lab
+That is my ansible-Lab for infra
