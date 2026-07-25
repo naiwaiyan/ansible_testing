@@ -1,0 +1,13 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+  - name: install bind9
+    apt:
+      name: bind9
+      state: latest
+  - name: install apache2 package
+    apt:
+      name: apache2
+      state: latest
