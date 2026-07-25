@@ -1,1 +1,1 @@
-192.168.184.137  ansible_become_password=control001
+192.168.184.137  ansible_become_password=control001 my_love=apache2
