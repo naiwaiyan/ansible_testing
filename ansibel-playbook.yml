@@ -5,9 +5,13 @@
   tasks:
 
   - name: install bind9 and apache2 and also update apt packages
-    apt:
+    package:
       name:
         - "{{ my_love }}"
         - bind9
+        - php
       state: latest
+  - name: update apt pack
+    package:
       update_cache: yes
+

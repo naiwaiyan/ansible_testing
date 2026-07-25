@@ -3,6 +3,17 @@
 - hosts: all
   become: true
   tasks:
-  - name: update package
-    apt:
+
+  - name: update and install packages
+    package:
+      name:
+        - apache2
+        - bind9
       update_cache: yes
+  - name: update apt
+    package:
+      update_cache: yes
+    when: ansible_distribution == "Ubuntu"
+
+
+
